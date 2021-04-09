@@ -382,6 +382,28 @@ img {
   flex-basis: calc((100% - 30px * 3) / 3);
 }
 
+.working-foto:nth-child(1) {
+  animation-duration: 2000ms;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.87, 0.27);
+  animation-delay: 1000ms;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+}
+
+.working-foto:nth-child(2) {
+  animation-duration: 2000ms;
+  animation-timing-function: linear;
+  animation-delay: 1000ms;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+}
+.working-foto:nth-child(3) {
+  animation-duration: 2000ms;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.87, 0.27);
+  animation-delay: 1000ms;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+}
 .working-text {
   position: absolute;
   left: 0;
@@ -426,6 +448,23 @@ img {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+.people-img {
+  animation-duration: 1000ms;
+  animation-timing-function: linear;
+  animation-delay: 5000ms;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+
+.people-img:nth-child(4) {
+  animation-duration: 1000ms;
+  animation-timing-function: linear;
+  animation-delay: 5000ms;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+
 .people-caption {
   margin-bottom: 10px;
   cursor: pointer;
