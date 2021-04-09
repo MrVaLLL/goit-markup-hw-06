@@ -141,6 +141,7 @@ img {
 .link.current {
   color: var(--link-color);
 }
+
 .link.current::after {
   content: '';
   position: absolute;
@@ -214,7 +215,8 @@ img {
 
   background-position: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero.jpg');
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/boxs/hero.jpg');
 }
 
 .slogan-text {
@@ -383,24 +385,24 @@ img {
 }
 
 .working-foto:nth-child(1) {
-  animation-duration: 2000ms;
+  animation-duration: 3000ms;
   animation-timing-function: cubic-bezier(0.17, 0.67, 0.87, 0.27);
-  animation-delay: 1000ms;
+  animation-delay: 4000ms;
   animation-iteration-count: 3;
   animation-direction: alternate;
 }
 
 .working-foto:nth-child(2) {
-  animation-duration: 2000ms;
+  animation-duration: 3000ms;
   animation-timing-function: linear;
-  animation-delay: 1000ms;
+  animation-delay: 4000ms;
   animation-iteration-count: 3;
   animation-direction: alternate;
 }
 .working-foto:nth-child(3) {
-  animation-duration: 2000ms;
+  animation-duration: 3000ms;
   animation-timing-function: cubic-bezier(0.17, 0.67, 0.87, 0.27);
-  animation-delay: 1000ms;
+  animation-delay: 4000ms;
   animation-iteration-count: 3;
   animation-direction: alternate;
 }
@@ -450,28 +452,13 @@ img {
 }
 
 .people-img {
-  animation-duration: 2000ms;
+  animation-duration: 3000ms;
   animation-timing-function: linear;
-  animation-delay: 6000ms;
+  animation-delay: 13000ms;
   animation-iteration-count: 3;
   animation-direction: alternate;
 }
 
-.people-img:nth-child(4) {
-  animation-duration: 1000ms;
-  animation-timing-function: linear;
-  animation-delay: 5000ms;
-  animation-iteration-count: 2;
-  animation-direction: alternate;
-}
-
-.people-img:active {
-  animation-duration: 1000ms;
-  animation-timing-function: linear;
-  animation-delay: 5000ms;
-  animation-iteration-count: 2;
-  animation-direction: alternate;
-}
 .people-caption {
   margin-bottom: 10px;
   cursor: pointer;
@@ -736,7 +723,8 @@ img {
   border-radius: 4px;
   cursor: pointer;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .indent {
   margin-right: 10px;
@@ -794,6 +782,7 @@ img {
   background-color: var(--link-color);
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-set {
@@ -957,14 +946,8 @@ img {
   color: #212121;
 }
 
-input {
-  display: flex;
-  font-family: inherit;
-  width: 448px;
-  height: 40;
-}
-
 .form-input {
+  font-family: inherit;
   display: flex;
   flex-direction: row;
   width: 448px;
@@ -980,7 +963,7 @@ input {
   margin-bottom: px;
 }
 
-.textarea {
+.comment {
   width: 448px;
   height: 120px;
   padding: 12px 16px;
@@ -989,7 +972,16 @@ input {
   border-radius: 4px;
   color: rgba(117, 117, 117, 0.5);
 }
-
+.comment:hover,
+.comment:focus {
+  border: 1px solid var(--link-color);
+  border-radius: 4px;
+}
 .form-subscribe {
   display: flex;
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: center;
 }
