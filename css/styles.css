@@ -17,7 +17,6 @@ body {
   font-style: normal;
   color: #757575;
   /* padding-top: 80px; */
-  outline: 1px solid hotpink;
 }
 
 ul {
@@ -135,7 +134,7 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* выделяет профиль на котором сидит юзер */
@@ -193,7 +192,7 @@ img {
   text-decoration: none;
   fill: #757575;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* SLOGAN */
@@ -232,14 +231,27 @@ img {
   text-transform: uppercase;
   color: #ffffff;
 
+  animation-name: fadeInDown;
   animation-duration: 3s;
-
   animation-delay: 2000ms;
-
   transition-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+
+/* @keyframes fadeInDown {
+  0% {
+    animation: animate__fadeInDown;
+    animation-duration: 3s;
+    animation-delay: 2000ms;
+    transition-timing-function: linear;
+    animation-direction: alternate;
+  }
+  100% {
+    animation-delay: 2000ms;
+    animation-duration: 3s;
+  }
+} */
 
 .animate__lightSpeedInLeft:hover {
   animation-play-state: paused;
@@ -263,6 +275,8 @@ img {
 .btn-slogan:focus,
 .btn-slogan:hover {
   background-color: #188ce8;
+  opacity: 1;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-button {
@@ -372,6 +386,7 @@ img {
   position: absolute;
   left: 0;
   bottom: 0;
+  margin: 0;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -528,7 +543,7 @@ img {
   min-height: 44px; */
 }
 
-/*  */
+/*  СОЦИАЛЬНЫЕ*/
 .footer-social {
   border-radius: 50%;
   width: 44px;
@@ -624,10 +639,13 @@ img {
   margin-right: 30px;
   flex-basis: calc((50% - 45px) / 2);
 }
-.footer-webstudio:last-child {
+.footer-webstudio:nth-child(2) {
   margin-right: 0;
 }
-
+/* Подпишись на Рассы */
+.subscribe {
+  margin-left: auto;
+}
 .form-subscribe {
   display: flex;
 }
@@ -668,10 +686,15 @@ img {
 .indent {
   margin-right: 10px;
 }
-
 .symboll {
+  display: inline-flex;
+  align-items: center;
   fill: #ffffff;
 }
+.btn-subscribe {
+  margin-left: 10px;
+}
+
 /* Portfolio!!!!!!!!!!!!!! */
 
 .contents {
@@ -761,20 +784,19 @@ img {
 
 .card-set-link:hover,
 .card-set-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  display: block;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.22), 0px 4px 4px rgba(0, 0, 0, 0.26), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
 }
 
 .card-set-item {
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
   flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
   margin-left: 30px;
   margin-top: 30px;
-}
-
-.card-set-item:hover,
-.card-set-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
 }
 
 .card-div {
@@ -911,4 +933,8 @@ input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   color: rgba(117, 117, 117, 0.5);
+}
+
+.form-subscribe {
+  display: flex;
 }
