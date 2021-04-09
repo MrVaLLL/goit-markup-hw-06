@@ -421,8 +421,8 @@
 
         <div class="footer-webstudio">
           <h2 class="footer-title">Подпишитесь на рассылку</h2>
-          <form class="form-subscribe" type="email" name="email" placeholder="Email">
-            <label for="">
+          <form>
+            <label>
               <input class="subscribe-input" type="email" name="email" placeholder="E-mail" />
             </label>
 
@@ -447,32 +447,33 @@
 
         <form class="form" name="signup_form" autocomplete="on" novalidate>
           <h2 class="form-h2">Оставьте свои данные, мы вам перезвоним</h2>
-          <div>
-            <label class="form-input">
+
+          <div class="form-div">
+            <label for="nsme">
               <span class="form-info">Имя</span>
-              <input type="email" name="email" placeholder="Email" />
             </label>
+            <input type="text" name="name" placeholder="Name" id="name" />
           </div>
 
-          <div>
-            <label class="form-input">
+          <div class="form-div">
+            <label for="tel">
               <span class="form-info">Телефон</span>
-              <input type="password" name="password" placeholder="Jacob Mercer" />
             </label>
+            <input type="tel" name="telephone" placeholder="telephone" id="tel" />
           </div>
 
-          <div>
-            <label class="form-input">
+          <div class="form-div">
+            <label for="mail">
               <span class="form-info">Почта</span>
-              <input type="password" name="password" placeholder="Jacob Mercer" />
             </label>
+            <input type="email" name="mail" placeholder="E-mail" id="mail" />
           </div>
 
-          <div>
-            <label class="form-input">
+          <div class="form-div">
+            <label>
               <span class="form-info">Комментарий</span>
-              <input type="password" name="password" placeholder="Введите текст" />
             </label>
+            <textarea class="textarea" name="feedback" placeholder="Введите текст"> </textarea>
           </div>
 
           <div class="">
