@@ -184,7 +184,7 @@
             </li>
 
             <li class="people-item">
-              <img class="people-img animate__rotateIn" src="./images/people/img2.jpg" alt="Ольга Репина" width="270" />
+              <img class="people-img animate__zoomIn" src="./images/people/img2.jpg" alt="Ольга Репина" width="270" />
               <div class="people-text">
                 <h3 class="people-caption">Ольга Репина</h3>
                 <p class="people-desc">Frontend Developer</p>
@@ -226,7 +226,7 @@
 
             <li class="people-item">
               <img
-                class="people-img animate__rotateOut"
+                class="people-img animate__zoomIn"
                 src="./images/people/img3.jpg"
                 alt="Николай Тарасов"
                 width="270"
@@ -459,7 +459,7 @@
           </svg>
         </button>
 
-        <form class="form" name="signup_form" autocomplete="on" novalidate>
+        <form class="form js-speaker-form" name="signup_form" autocomplete="on" novalidate>
           <h2 class="form-h2">Оставьте свои данные, мы вам перезвоним</h2>
 
           <div class="form-div">
@@ -484,10 +484,10 @@
           </div>
 
           <div class="form-div">
-            <label>
+            <label for="textarea">
               <span class="form-info">Комментарий</span>
             </label>
-            <textarea class="textarea" name="feedback" placeholder="Введите текст"> </textarea>
+            <textarea class="textarea" name="textarea" placeholder="Введите текст" id="textarea"> </textarea>
           </div>
 
           <div class="">
