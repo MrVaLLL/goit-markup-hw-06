@@ -462,46 +462,59 @@
         <form class="form js-speaker-form" name="signup_form" autocomplete="on" novalidate>
           <h2 class="form-h2">Оставьте свои данные, мы вам перезвоним</h2>
 
-          <div class="form-div">
-            <label for="name">
+          <div class="form-field">
+            <label for="name" class="form-label">
               <span class="form-info">Имя</span>
             </label>
-            <input class="form-input" type="text" name="name" placeholder="Name" id="name"  />
+            <div class="form-modal">
+              <input class="form-input" type="text" name="name" id="name" />
+              <svg class="form-icon" width="12" height="12">
+                <use href="./images/sprite.svg#icon-chel"></use>
+              </svg>
+            </div>
           </div>
 
-          <div class="form-div">
-            <label for="tel">
+          <div class="form-field">
+            <label for="tel" class="form-label">
               <span class="form-info">Телефон</span>
             </label>
-            <input class="form-input" type="tel" name="telephone" placeholder="telephone" id="tel" />
+            <div class="form-modal">
+              <input class="form-input" type="tel" name="telephone" id="tel" />
+              <svg class="form-icon" width="13px" height="13px">
+                <use href="./images/sprite.svg#icon-tel"></use>
+              </svg>
+            </div>
           </div>
 
-          <div class="form-div">
-            <label for="mail">
+          <div class="form-field">
+            <label for="mail" class="form-label">
               <span class="form-info">Почта</span>
             </label>
-            <input class="form-input" type="email" name="mail" placeholder="E-mail" id="mail" />
+            <div class="form-modal">
+              <input class="form-input" type="email" name="mail" id="mail" />
+              <svg class="form-icon" width="14px" height="12px">
+                <use href="./images/sprite.svg#icon-mail"></use>
+              </svg>
+            </div>
           </div>
 
-          <div class="form-div">
-            <label for="comment">
+          <div class="form-field">
+            <label for="comment" class="form-label">
               <span class="form-info">Комментарий</span>
             </label>
-            <textarea class="comment" name="comment" placeholder="Введите текст" id="comment"> </textarea>
+            <textarea class="comment" name="comment" rows="10" id="comment" placeholder="Введите текст"> </textarea>
           </div>
 
-          <div class="form-checkbox">
-            <input type="checkbox" name="policy" id="policy" />
-            <label for="policy">
-              Соглашаюсь с рассылкой и принимаю<a href="" target="_blank" rel="noopener noreferrer">
-                Условия договора
-              </a>
-            </label>
-          </div>
+          <label class="form-policy">
+            <input class="modal-checkbox visually-hidden" type="checkbox" name="policy" />
+            <span class="icon-custom"></span>
+            <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю</span>&nbsp;
+            <a href="#" class="link-text">Условия договора</a>
+          </label>
 
-          <div>
+          <div class="btn-submit">
             <button class="btn-slogan" type="submit">
-              <span class="btn-button">Отправить</span>
+              <span class="btn-button modal-button">Отправить</span>
             </button>
           </div>
         </form>
