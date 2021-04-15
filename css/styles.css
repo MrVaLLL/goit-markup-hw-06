@@ -72,7 +72,7 @@ img {
   z-index: 1; */
 }
 
-.div-navigation {
+.navigation {
   display: flex;
   align-items: center;
 }
@@ -81,24 +81,14 @@ img {
   display: flex;
 }
 
-.menu {
-  display: flex;
-}
-.menu-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.menu-item {
-  position: relative;
-}
-/* WebStudio */
+/* logo */
 
 .logo {
   display: flex;
   align-items: center;
   margin-right: 94px;
 }
-.web {
+.logo__web {
   font-family: Raleway;
   font-size: 26px;
   line-height: 1.19;
@@ -106,7 +96,7 @@ img {
   color: var(--link-color);
 }
 
-.studio {
+.logo__studio {
   font-family: Raleway;
   font-size: 26px;
   line-height: 1.19;
@@ -114,17 +104,19 @@ img {
   color: #000000;
 }
 
-/* footer Studio */
-.studi-o {
-  font-family: Raleway;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+/* menu */
+.menu {
+  display: flex;
+}
+.menu__item:not(:last-child) {
+  margin-right: 50px;
 }
 
-/* ссылки на страници*/
-.link {
+.menu__item {
+  position: relative;
+}
+
+.menu__link {
   display: block;
   font-weight: 500;
   font-size: 14px;
@@ -133,16 +125,15 @@ img {
   color: #212121;
   padding-top: 32px;
   padding-bottom: 32px;
-
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* выделяет профиль на котором сидит юзер */
-.link.current {
+.menu__link.current {
   color: var(--link-color);
 }
 
-.link.current::after {
+.menu__link.current::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -155,8 +146,19 @@ img {
   margin-bottom: -1px;
 }
 
-.link:hover,
-.link:focus,
+/* footer Studio */
+.studi-o {
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+/* ссылки на страници*/
+
+.menu__link:hover,
+.menu__link:focus,
 .auth-link:hover,
 .auth-link:focus,
 .auth-item:focus,
@@ -930,14 +932,14 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border: none;
   cursor: pointer;
-
+  transition: fill 350ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 50%;
 }
 
 .close:hover {
-  background-color: #10989c;
+  background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  fill: #ffffff;
+  fill: #2196f3;
 }
 
 .form-h2 {
